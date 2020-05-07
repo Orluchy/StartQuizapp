@@ -24,11 +24,18 @@
     color: #ffffff;
   }
   
+  .correct .choice-text{
+     color: #ffffff;
+  }
+
   .incorrect {
     background-color: #ff0000;
     color: #ffffff;
   }
 
+  .incorrect .choice-text{
+      color: #ffffff;
+  }
 
   #head {
     display: flex;
