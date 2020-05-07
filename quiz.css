@@ -1,6 +1,6 @@
 .choice-container {
     display: flex;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     width: 100%;
     font-size: 1.8rem;
     border: 0.1rem solid #b300b3;
@@ -10,7 +10,7 @@
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(179, 28, 179, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(150, 106, 255, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
@@ -50,4 +50,26 @@
   
   .head-main-text {
     text-align: center;
+  }
+
+ #nextbutn {
+   margin-top: 3rem;
+   padding: 0.5rem;
+   background-color: #b300b3;
+   width: 14rem;
+   margin: 2rem auto;
+   border-radius: 1rem;
+  }
+
+ #nextbutn h3 {
+   color: #ffffff;
+   text-align: center;
+   margin: 0;
+  }
+
+ #nextbutn:hover {
+   cursor: pointer;
+   box-shadow: 0 0.4rem 1.4rem 0 rgba(150, 106, 255, 0.5);
+   transform: translateY(-0.1rem);
+   transition: transform 150ms;
   }
