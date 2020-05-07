@@ -10,9 +10,9 @@
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(150, 106, 255, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(168, 86, 235, 0.5);
     transform: translateY(-0.1rem);
-    transition: transform 150ms;
+    transition: transform 120ms;
   }
   
   .choice-text {
@@ -53,25 +53,28 @@
   }
 
  #nextbutn {
-   margin-top: 3rem;
-   padding: 0.5rem;
-   background-color: #b300b3;
-   width: 14rem;
-   margin: 2rem auto;
-   border-radius: 1rem;
+    margin: 2rem auto;
+    margin-top: 2.5rem;
+    margin-left: 2px;
+    width: 13rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #501fc2;
   }
 
  #nextbutn h3 {
-   color: #ffffff;
-   text-align: center;
-   margin: 0;
+    font-size: 2rem;
+    color: #fdfbfb;
+    text-align: center;
+    margin: 0;
+    height: 30px;
   }
 
  #nextbutn:hover {
    cursor: pointer;
-   box-shadow: 0 0.4rem 1.4rem 0 rgba(150, 106, 255, 0.5);
+   box-shadow: 0 0.4rem 1.4rem 0 rgba(168, 86, 2535, 0.5);
    transform: translateY(-0.1rem);
-   transition: transform 150ms;
+   transition: transform 120ms;
   }
 
  p#endstatement{
