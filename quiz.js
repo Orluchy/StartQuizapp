@@ -8,7 +8,7 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuesions = [];
+let availableQuestions = [];
 
 let quizChoice1 = document.getElementById("choice-1");
 let quizChoice2 = document.getElementById("choice-2");
@@ -34,7 +34,7 @@ let questions = [
     answer: 2
   },
   {
-    question: "How much was recently recovered from Abacha's loot from the US,
+    question: "How much was recently recovered from Abacha's loot from the US?",
     choice1: "$281 million",
     choice2: "$218 million",
     choice3: "$321 million",
@@ -66,20 +66,21 @@ const MAX_Questions = 5;
 startGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuesions = [...questions];
+  availableQuestions = [...questions];
   getNewQuestion();
 };
 
 getNewQuestion = () => {
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("mostRecentScore", score);
     //go to the end page instead
-    return window.location.assign("end.html");
+    return window.location.assign("scorepage.html");
   }
   questionCounter++;
   questionCounterText.innerText = `${questionCounter}/${MAX_Questions}`;
 
-  const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-  currentQuestion = availableQuesions[questionIndex];
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
   choices.forEach(choice => {
@@ -87,7 +88,7 @@ getNewQuestion = () => {
     choice.innerText = currentQuestion["choice" + number];
   });
 
-  availableQuesions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
 };
 
@@ -104,11 +105,26 @@ choices.forEach(choice => {
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_Bonus);
+      selectedOption.parentElement.classList.add(classToApply);
+    } else {
+      selectedOption.parentElement.classList.add(classToApply);
+
+      if (currentQuestion.answer === 1) {
+        quizChoice1.classList.add("correct");
+      } else if (currentQuestion.answer === 2) {
+        quizChoice2.classList.add("correct");
+      } else if (currentQuestion.answer === 3) {
+        quizChoice3.classList.add("correct");
+      } else if (currentQuestion.answer === 4) {
+        quizChoice4.classList.add("correct");
+      }
     }
 
-    selectedChoice.parentElement.classList.add(classToApply);
-
     setTimeout(() => {
+      quizChoice1.classList.remove("correct");
+      quizChoice2.classList.remove("correct");
+      quizChoice3.classList.remove("correct");
+      quizChoice4.classList.remove("correct");
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
     }, 550);
