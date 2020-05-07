@@ -16,7 +16,7 @@
   }
   
   .choice-text {
-    padding: 1.5rem;
+    padding: 1.4rem;
     width: 100%;
   }
 
@@ -45,7 +45,7 @@
   
   .head-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .head-main-text {
@@ -54,8 +54,6 @@
 
  #nextbutn {
     margin: 2rem auto;
-    margin-top: 10rem;
-    margin-left: 2px;
     width: 13rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -78,7 +76,7 @@
   }
 
  p#endstatement{
-  font-size: 2rem;
+  font-size: 3.8rem;
   color: #444333;
   margin-bottom: 2rem;
   }
