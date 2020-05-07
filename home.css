@@ -56,7 +56,7 @@
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
   }
   
   .container > * {
@@ -114,6 +114,3 @@
     transform: none;
   }
 
-@media (min-width: 360px){
-      width: 95%;
-}
