@@ -3,8 +3,8 @@
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid rgb(86, 165, 235, 0.25);
-    background-color: white;
+    border: 0.1rem solid #b300b3;
+    background-color: #ffffff;
   }
   
   .choice-container:hover {
@@ -14,36 +14,32 @@
     transition: transform 150ms;
   }
   
-  .choice-prefix {
-    padding: 1.5rem 2.5rem;
-    background-color: #56a5eb;
-    color: white;
-  }
-  
   .choice-text {
     padding: 1.5rem;
     width: 100%;
   }
 
   .correct {
-    background-color: #28a745;
+    background-color: #008000;
+    color: #ffffff;
   }
   
   .incorrect {
-    background-color: #dc3545;
+    background-color: #ff0000;
+    color: #ffffff;
   }
 
 
-  #hud {
+  #head {
     display: flex;
     justify-content: space-between;
   }
   
-  .hud-prefix {
+  .head-prefix {
     text-align: center;
     font-size: 2rem;
   }
   
-  .hud-main-text {
+  .head-main-text {
     text-align: center;
   }
