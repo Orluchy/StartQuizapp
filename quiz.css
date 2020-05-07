@@ -73,3 +73,13 @@
    transform: translateY(-0.1rem);
    transition: transform 150ms;
   }
+
+ p#endstatement{
+  font-size: 2rem;
+  color: #444333;
+  margin-bottom: 2rem;
+  }
+
+ h1#finalScore {
+  margin-bottom: 2rem;
+  }
