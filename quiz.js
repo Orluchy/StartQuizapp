@@ -72,7 +72,7 @@ startGame = () => {
 
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_Questions) {
-    localStorage.setItem("RecentScore", score);
+    localStorage.setItem("mostRecentScore", score);
     //go to the end page instead
     return window.location.assign("scorepage.html");
   }
@@ -127,7 +127,7 @@ choices.forEach(choice => {
       quizChoice4.classList.remove("correct");
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 10000);
+    }, 550);
   });
 });
 
