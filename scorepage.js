@@ -1,4 +1,4 @@
 const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScore = document.getElementById("finalScore");
-const mostRecentScore = localStorage.getItem("RecentScore");
+const RecentScore = localStorage.getItem("mostRecentScore");
 finalScore.innerText = RecentScore;
