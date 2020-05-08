@@ -18,7 +18,7 @@ let quizChoice4 = document.getElementById("choice-4");
 
 let questions = [
   {
-    question: "Relays are generally divided into _______ & ______ Relays?",
+    question: "Relays are generally divided into _______ & ______ Relays",
     choice1: "Manual & Automated",
     choice2: "Digital & Manual",
     choice3: "Electromechanical  & Solid-state",
@@ -127,7 +127,7 @@ choices.forEach(choice => {
       quizChoice4.classList.remove("correct");
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 500);
+    }, 400);
   });
 });
 
