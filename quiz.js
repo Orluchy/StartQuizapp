@@ -121,6 +121,10 @@ choices.forEach(choice => {
     }
 
     setTimeout(() => {
+      quizChoice1.classList.remove("correct");
+      quizChoice2.classList.remove("correct");
+      quizChoice3.classList.remove("correct");
+      quizChoice4.classList.remove("correct");
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
     }, 10000);
