@@ -1,5 +1,6 @@
 .choice-container {
     display: flex;
+    flex-direction: column;
     margin-bottom: 0.8rem;
     width: 100%;
     font-size: 1.8rem;
